@@ -26,12 +26,13 @@ body{background:#b0f6c0;font-family:'Montserrat',sans-serif}
 .faq-body li{font-size:14px;color:#1a4d0a;line-height:1.6;display:flex;gap:10px;opacity:0.85}
 .faq-body li::before{content:"–";color:#1a4d0a;flex-shrink:0;opacity:0.5}
 .faq-body strong{color:#1a4d0a;font-weight:600;opacity:1}
+.faq-body a{color:#1a4d0a;font-weight:500}
 .script-box{background:#e2fce8;border-left:3px solid #1a4d0a;border-radius:0 10px 10px 0;padding:12px 16px;margin-top:12px;font-size:14px;color:#1a4d0a;line-height:1.7;font-style:italic}
 .copy-btn{display:inline-flex;align-items:center;gap:6px;margin-top:10px;background:none;border:1px solid #1a4d0a;border-radius:20px;padding:6px 14px;font-size:13px;color:#1a4d0a;cursor:pointer;font-family:'Montserrat',sans-serif;transition:background 0.2s}
 .copy-btn:hover{background:#e2fce8}
 .copy-btn i{font-size:14px}
-.alert-box{background:#fffbe6;border-left:3px solid #b88a00;border-radius:0 10px 10px 0;padding:12px 16px;margin-top:12px;font-size:14px;color:#5a4200;line-height:1.7}
-.alert-box strong{color:#3a2a00;font-size:16px}
+.alert-box{background:#e2fce8;border-left:3px solid #1a4d0a;border-radius:0 10px 10px 0;padding:12px 16px;margin-top:12px;font-size:14px;color:#1a4d0a;line-height:1.7}
+.alert-box strong{color:#1a4d0a;font-size:16px}
 .divider{height:1px;background:#1a4d0a;opacity:0.15;margin:2.5rem 2rem 1.5rem}
 .footer{text-align:center;padding:0 2rem 1.5rem}
 .footer img{height:52px;width:auto;display:inline-block}
@@ -113,13 +114,31 @@ body{background:#b0f6c0;font-family:'Montserrat',sans-serif}
 
       <div class="faq-item" data-idx="5">
         <button class="faq-btn" onclick="toggle(5)" aria-expanded="false">
+          <div class="faq-icon"><i class="ti ti-login" aria-hidden="true"></i></div>
+          <span class="faq-q">Como os colaboradores vão acessar o novo sistema?</span>
+          <i class="ti ti-chevron-down chevron" aria-hidden="true"></i>
+        </button>
+        <div class="faq-body" id="body-5">
+          <p>Para acessar a nova plataforma, siga as instruções abaixo:</p>
+          <p style="margin-top:10px"><strong>Link de acesso:</strong> <a href="https://provet-login.pixeonkorus.com/" target="_blank">https://provet-login.pixeonkorus.com/</a></p>
+          <p style="margin-top:10px">Na tela de login, preencha os campos da seguinte forma:</p>
+          <ul style="margin-top:8px">
+            <li><span><strong>Domínio:</strong> provet</span></li>
+            <li><span><strong>Login:</strong> O mesmo usuário que você já utiliza no Pleres</span></li>
+            <li><span><strong>Senha:</strong> A mesma senha que você já utiliza no Pleres</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item" data-idx="6">
+        <button class="faq-btn" onclick="toggle(6)" aria-expanded="false">
           <div class="faq-icon"><i class="ti ti-tool" aria-hidden="true"></i></div>
           <span class="faq-q">Tive um problema técnico crítico durante o plantão. Quem devo acionar?</span>
           <i class="ti ti-chevron-down chevron" aria-hidden="true"></i>
         </button>
-        <div class="faq-body" id="body-5">
+        <div class="faq-body" id="body-6">
           <p>Em caso de travamentos ou dúvidas técnicas impeditivas, acione imediatamente o plantão de TI/Suporte pelo canal oficial:</p>
-          <div class="alert-box"><strong>Ramal *1000</strong> — canal oficial de suporte durante a virada de sistema.</div>
+          <div class="alert-box"><strong>Ramal *100</strong> — canal oficial de suporte durante a virada de sistema.</div>
         </div>
       </div>
 
